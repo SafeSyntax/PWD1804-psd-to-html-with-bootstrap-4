@@ -1,0 +1,220 @@
+/*Needed Property*/
+/*-------------------------------------
+font-family: 'Open Sans', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+
+color: #3baafe 
+
+
+--------------------------------------
+*/
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Noto Sans', 'Open Sans', sans-serif;
+}
+a:hover {
+    text-decoration: none;
+}
+
+
+/*Common CSS*/
+.title {
+	text-align: center;
+	
+}
+.title h3 {
+	font-family: 'Noto Sans', sans-serif;
+	color: #3baafe;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+}
+.title h3:before {
+    content: "";
+    position: absolute;
+    left: -25px;
+    top: 3px;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/icons/1.png);
+    background-repeat: no-repeat;
+}
+.title h3:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: -3px;
+    width: 50px;
+    height: 3px;
+    background-color: #b6b6b6;
+}
+
+/*Header Area*/
+.header {
+	background: #fafafa;
+}
+.navbar {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.header .navbar-light .navbar-nav .nav-link {
+    color: #999;
+    text-transform: uppercase;
+    padding: 20px 15px;
+}
+.header .navbar-light .navbar-nav .nav-item:last-child .nav-link {
+	padding-right: 0;
+} 
+.header .navbar-light .navbar-nav .active {
+	position: relative;
+}
+.header .navbar-light .navbar-nav .active:after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    background: #3baafe;
+    bottom: 14px;
+    left: 15px;
+    right: 15px;
+}
+
+
+/*Banner Area*/
+.banner {
+	background-color: #7a7878;
+	background-image: url(../images/bg/1.jpg);
+	background-size: cover;
+	text-align: right;
+	padding-top: 200px;
+	padding-bottom: 200px;
+	position: relative;
+	z-index: 0;
+	background-attachment: fixed;
+}
+.banner:after {
+	content: "";
+	position: absolute;
+	background: rgba(122,120,120,.9);
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+}
+.bann-title h2 {
+	color: #e6e6e6;
+	font-size: 48px;
+	font-weight: 900;
+	text-transform: uppercase;
+	
+}
+.bann-title h2 span {
+	color: #3baafe;
+}
+.bann-btn {	
+	font-size: 18px;
+	font-weight: 700;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px 30px;
+	text-decoration: none;
+	background: #555;
+	transition: .3s;
+	display: inline-block;
+	margin-left: 20px;
+	
+}
+.bann-btn:hover {
+	background-color: #fff;
+	color: #777;
+}
+.btn-white {
+	color: #777;
+	background-color: #fff;
+}
+.bann-btn.btn-white:hover {
+	background-color: #777;
+	color: #fff;
+}
+
+.our-best {
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+/*Our Best Area*/
+.best-item {
+	background: #f5f5f5;
+	position: relative;
+	padding-top: 50px;
+	padding: 30px;
+	padding-right: 15px;
+	transition: .3s;
+	margin-bottom: 60px;
+}
+.best-icon {
+	position: absolute;
+	top: -30px;
+	left: 30px;
+}
+.best-icon a {
+    background: #555555;
+    text-align: center;
+    line-height: 56px;
+    font-size: 25px;
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+    color: #fff;
+    display: inline-block;
+    border: 5px solid #fff;
+    transition: 1s;
+}
+.best-title {
+    padding-top: 24px;
+}
+.best-title h4 {
+	font-family: 'Noto Sans', sans-serif;
+	color: #777777;
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: relative;
+	display: inline-block;
+	text-align: left;
+	position: relative;
+	
+}
+
+.best-title h4:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: -3px;
+    width: 50px;
+    height: 3px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px #dadada;
+    transition: .3s;
+}
+
+.best-content {
+    padding-top: 10px;
+}
+
+.best-item:hover .best-icon a {
+	background: #3baafe;
+	transform: rotate(360deg);
+} 
+.best-item:hover .best-title h4:after {
+	background: #3baafe;
+}
+.best-item:hover {
+	box-shadow: 5px 5px 5px #dadada;
+}
